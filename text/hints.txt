@@ -1,0 +1,2 @@
+Prestige
+A score accumulated through activities across different BBS nodes. It is assigned by the systems and can rise and lower over time. It is not really known the true forumla used but there are a few knowns that have been gleened by users over time: it is positively impacted by activities that are deemed as beneficial to the community and negatively impacted by those that act in a myoptic way. 
