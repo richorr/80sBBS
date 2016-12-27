@@ -1,0 +1,14 @@
+SEND Send a message to other users
+CONTACT Contact another user
+ABOUT Understand more about 80sBBS
+
+Modem Commands
+CONNECT Connect to another BBS
+DISCONNECT Exit from the BBS 
+
+BBS Commands
+DIRECTORY List all BBSes available to connect to
+USERS See list of users on the BBS
+INFO Information about the current BBS you are on
+TERMINATE Eliminate a user from the BBS
+GRANT Donate level points to another user
