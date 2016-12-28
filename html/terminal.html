@@ -14,7 +14,7 @@ function getBPSRate(lenOfText)
 }
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function bbsprint(textToPrint) {
@@ -30,8 +30,14 @@ async function bbsprint(textToPrint) {
 	var l = textToPrint.length;
 	for (i=0; i < l; i++)
 	{
-		//document.write(textToPrint.charAt(i));
-	  	document.getElementById("bbs_text").innerHTML = document.getElementById("bbs_text").innerHTML + textToPrint.charAt(i);
+		if (textToPrint.charAt(i) == "\r" || textToPrint.charAt(i) == "\n") 
+		{
+		  	document.getElementById("bbs_text").innerHTML = document.getElementById("bbs_text").innerHTML + "</p><p>";
+		}
+		else
+		{
+		  	document.getElementById("bbs_text").innerHTML = document.getElementById("bbs_text").innerHTML + textToPrint.charAt(i);			
+		}		
 	  	await sleep(getBPSRate());
 	}
 	
@@ -46,7 +52,7 @@ function loadDoc() {
 
 	xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("payload").innerHTML = this.responseText;
+    	document.getElementById("payload").innerHTML = this.responseText;
 		bbsprint(document.getElementById("payload").innerHTML);
     }
   };
@@ -54,7 +60,7 @@ function loadDoc() {
   xhttp.send();
 }
 
-var bbsText = "I am wondering"+ String.fromCharCode(10) + String.fromCharCode(13) + "if this is going to work if there is a lot more text to work with than the original test that I ran. It works great!";
+// var bbsText = "I am wondering"+ String.fromCharCode(10) + String.fromCharCode(13) + "if this is going to work if there is a lot more text to work with than the original test that I ran. It works great!";
 
 window.loadDoc();
 //window.bbsprint(bbsText);

@@ -10,5 +10,5 @@ BBS Commands
 DIRECTORY List all BBSes available to connect to
 USERS See list of users on the BBS
 INFO Information about the current BBS you are on
-TERMINATE Eliminate a user from the BBS
+BASNISH Eliminate a user from the BBS
 GRANT Donate level points to another user
