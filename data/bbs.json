@@ -1,0 +1,101 @@
+{
+	"bbslist": [
+		{
+			"name": "Flight Deck",
+			"phone": "235-1659",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 0
+		},
+		{
+			"name": "Friends of Magic",
+			"phone": "243-6109",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 0
+		},
+		{
+			"name": "Colossus",
+			"phone": "243-6386",
+			"logo": "puffy",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 0
+		},
+		{
+			"name": "Knights of the Round Table",
+			"phone": "244-0630",
+			"logo": "invita",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 0
+		},
+		{
+			"name": "Farpoint Station",
+			"phone": "248-9999",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "startrek",
+			"minPrestige": 100
+		},
+		{
+			"name": "Hotel California",
+			"phone": "251-7360",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "music",
+			"minPrestige": 100
+		},
+		{
+			"name": "Computer Shop",
+			"phone": "251-7360",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "computerhistory",
+			"minPrestige": 100
+		},
+		{
+			"name": "Frost Byte",
+			"phone": "255-9417",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 50
+		},
+		{
+			"name": "Wizards Realm",
+			"phone": "281-9706",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 100
+		},
+		{
+			"name": "The Twilight Phone",
+			"phone": "282-1051",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 100
+		},
+		{
+			"name": "Mirror Image",
+			"phone": "251-0139",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": 1,
+			"minPrestige": 500
+		},
+		{
+			"name": "Raunchy Rubberbandland",
+			"phone": "239-5684",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": 1,
+			"minPrestige": 1000
+		}
+	]
+}
+	
