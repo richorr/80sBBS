@@ -1,8 +1,12 @@
 from bottle import route, run, template, static_file
 import os
+import welcomelogo
 
 @route('/')
 @route('/bbs')
+def welcome():
+	return welcomelogo.formatlogo("Narrative Coffee", "stampatello")
+
 @route('/bbs/<user>')
 def welcome(user="Guest"):
 	return template("Welcome back {{user}}. We're glad to see you come back.", user=user)
