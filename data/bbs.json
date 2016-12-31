@@ -1,12 +1,76 @@
 {
 	"bbslist": [
 		{
+			"name": "local",
+			"phone": "",
+			"logo": "slant",
+			"capacity": 1000,
+			"triviaTopic": "all",
+			"minPrestige": 0,
+			"commands" :
+			[
+				{
+					"comand":"connect",
+					"description":"Connect to a BBS on the network",
+					"level":0,
+					"minPrestige":0,
+					"cost":0
+				},
+				{
+					"comand":"disconnect",
+					"description":"Disconnect from the current BBS",
+					"level":0,
+					"minPrestige":0,
+					"cost":0
+				},
+				{
+					"comand":"list",
+					"description":"List of available BBS'es",
+					"level":0,
+					"minPrestige":0,
+					"cost":0
+				}
+			]
+		},
+		{
 			"name": "Flight Deck",
 			"phone": "235-1659",
 			"logo": "slant",
 			"capacity": 1000,
 			"triviaTopic": "all",
-			"minPrestige": 0
+			"minPrestige": 0,
+			"commands":[
+				{
+					"comand":"reserve",
+					"description":"Allocate power to the system",
+					"level":0,
+					"minPrestige":0,
+					"cost":0
+				},
+				{
+					"comand":"dedicate",
+					"description":"Dedicate power daily to the system",
+					"level":0,
+					"minPrestige":0,
+					"cost":0
+				},
+				{
+					"comand":"consume",
+					"description":"Allocate power to the system",
+					"level":0,
+					"minPrestige":10,
+					"cost":1,
+					"costLevelMultiplier":2
+				},
+				{
+					"comand":"consume",
+					"description":"Allocate power to the system",
+					"level":0,
+					"minPrestige":10,
+					"cost":1,
+					"costLevelMultiplier":2
+				}
+			]
 		},
 		{
 			"name": "Friends of Magic",
