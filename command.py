@@ -12,6 +12,7 @@ def modemconnect(phone):
 	bbsToConnect = [bbs for bbs in bbsdata['bbslist'] if bbs['phone'] == phone]
 	print(bbsToConnect)
 	#TODO(richorr) Update user state
+	return bbsToConnect
 
 def modemdisconnect(phone):
 	#TODO(richorr) Add disconnect code - reset the users connect state
@@ -25,7 +26,7 @@ def modemlist(prestige):
 	for bbs in bbsdata['bbslist']:
 		if bbs['minPrestige'] <= prestige:
 			bbslist.append("[{}] {} - {}\n".format(count, bbs['name'], bbs['phone']))
-			print("[{}] {} - {}".format(count, bbs['name'], bbs['phone']))
 			count+=1
 	print(bbslist)
+	return bbslist
 

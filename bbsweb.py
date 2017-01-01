@@ -1,11 +1,11 @@
 from bottle import route, run, template, static_file
 import os
-import welcomelogo
+import welcome
 
 @route('/')
 @route('/bbs')
 def welcome():
-	return welcomelogo.formatlogo("Narrative Coffee", "stampatello")
+	return welcome.formatlogo("Narrative Coffee", "stampatello")
 
 @route('/bbs/<user>')
 def welcome(user="Guest"):
@@ -18,10 +18,6 @@ def commands():
 @route('/bbs/story')
 def story():
     return static_file("story.txt", root=os.getcwd()+'/text')
-
-@route('/bbs/cwd')
-def cwd():
-    return os.getcwd()
 
 @route('/bbs/terminal')
 def commands():

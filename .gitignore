@@ -2,3 +2,7 @@
 *.py#
 
 *.pyc
+
+html/terminal.bak.html
+
+localterminal.py

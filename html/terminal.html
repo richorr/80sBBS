@@ -1,12 +1,16 @@
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>80sBBS</title>
+	<script src="https://cdn.jsdelivr.net/jquery.terminal/0.11.23/jquery.terminal.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/jquery.terminal/0.11.23/jquery.terminal.min.css" rel="stylesheet"/>
 </head>
 <body>
 <p id="payload"></p>
 <br>
 <p id="bbs_text"></p>
+<br/>
+<input id="prompt" type="text" autofocus/>
 <script>
 function getBPSRate(lenOfText)
 {
