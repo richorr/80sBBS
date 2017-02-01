@@ -1,6 +1,6 @@
 from bottle import route, run, template, static_file
 import os
-import welcome
+import bbswelcome
 
 @route('/')
 @route('/bbs')
@@ -15,12 +15,20 @@ def welcome(user="Guest"):
 def commands():
     return static_file("commands.txt", root=os.getcwd()+'/text')
 
-@route('/bbs/story')
+@route('/bbs/hints')
 def story():
-    return static_file("story.txt", root=os.getcwd()+'/text')
+    return static_file("hints.txt", root=os.getcwd()+'/text')
 
 @route('/bbs/terminal')
 def commands():
-    return static_file("terminal.html", root=os.getcwd()+'/html')
+    return static_file("bbs-terminal.html", root=os.getcwd()+'/html')
+
+@route('/bbs/js/<filename:path>')
+def send_static(filename):
+    return static_file(filename, root=os.getcwd()+'/html/js')
+
+@route('/bbs/css/<filename:path>')
+def send_static(filename):
+    return static_file(filename, root=os.getcwd()+'/html/css')
 
 run(host='localhost', port=8080, debug=True)
