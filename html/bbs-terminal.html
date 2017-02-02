@@ -8,19 +8,19 @@
 	<script src="js/jquery.terminal-0.11.23.js"></script>
 	<link href="css/jquery.terminal.css" rel="stylesheet"/>
 	<script type='text/javascript'>
-		$(document).ready(function1);
-	</script>
-
-	<script>
-		$('#bbsterminal').terminal(function(command, term) {
-	    if (command == 'test') {
-	        term.echo("you just typed 'test'");
-	    } else {
-	        term.echo('unknown command');
-	    }
-	}, { prompt: '>', name: '80sBBS' }));
+	$( document ).ready(function()
+	{
+			$('#bbsterminal').terminal(function(command, term) {
+		    if (command == 'test') {
+		        term.echo("you just typed 'test'");
+		    } else {
+		        term.echo('unknown command');
+		    }
+		}, { prompt: '>', name: '80sBBS'});
+	});
 	</script>
 </head>
 <body>
       <div id="bbsterminal"></div>
+			<p id="status"/>
 </body>
