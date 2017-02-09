@@ -10,10 +10,56 @@
 	<script type='text/javascript'>
 	$( document ).ready(function()
 	{
-			$('#bbsterminal').terminal(function(command, term) {
-		    if (command == 'test') {
-		        term.echo("you just typed 'test'");
-		    } else {
+			$('#bbsterminal').terminal(function(command, term)
+			{
+				if (command == '?' || command == "help")
+				{
+		        term.echo("TODO: menu");
+				}
+				else if (command == 'connect')
+				{
+						term.push(function(phonenbr,term)
+						{
+							term.echo('Calling... ' + phonenbr );
+
+							//TODO: Call to server and load new BBS context
+							term.pop();
+						},
+						{
+							prompt: 'Phone # >', name: 'phonenbr'
+						});
+				else if (command == 'jump')
+				{
+						term.push(function(level,term)
+						{
+							term.echo('Jumping to... ' + level );
+
+							//TODO: Call to server and load new BBS context
+							term.pop();
+						},
+						{
+							prompt: 'Jump to level >', name: 'jump'
+						});
+		    } else if (command =="hints")
+				{
+					term.echo('Calling the server...')
+					term.pause();
+					$.ajax({
+						type: 'GET',
+						url: 'http://localhost:8080/bbs/help',
+						history: false,
+						success: function(result) {
+							term.resume();
+							term.echo("call returned");
+							if(r.result == true) {
+								term.echo(result);
+							} else {
+								term.echo('Nothing returned')
+							}
+						}
+					});
+				} else
+				{
 		        term.echo('unknown command');
 		    }
 		}, { prompt: '>', name: '80sBBS'});

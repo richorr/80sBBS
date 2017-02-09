@@ -4,11 +4,20 @@ ABOUT Understand more about 80sBBS
 
 Modem Commands
 CONNECT Connect to another BBS
-DISCONNECT Exit from the BBS 
+DISCONNECT Exit from the BBS
 
 BBS Commands
 DIRECTORY List all BBSes available to connect to
 USERS See list of users on the BBS
 INFO Information about the current BBS you are on
-BASNISH Eliminate a user from the BBS
-GRANT Donate level points to another user
+CONSUME Attempt to gain more power
+SIPHON Gain power from another user
+GRANT Donate power to another user
+JUMP Move between permissions
+ELEVATE Increase another users permissions
+DEMOTE Decrease another users permissions
+SPOOF Impersonate another permissions
+RUN Run a program
+BANISH Eliminate a user from the BBS
+FREEZE Disable a user on a BBS
+THAW Re-enable a user on a BBS
